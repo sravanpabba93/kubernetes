@@ -4,11 +4,11 @@ metadata:
   name: redis-service
   labels:
     name: redis-service
-    app: result-voting-app
+    app: redis-voting-app
 spec:
   ports:
    - port: 6379
      targetPort: 6379
   selector:
-       name: result-app-pod
-       app: result-voting-app   
+       name: redis-app-pod
+       app: redis-voting-app   
