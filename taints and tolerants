@@ -1,0 +1,12 @@
+kubectl describe node nodename
+
+kubectl taint node nodename key=value:NoSchedule
+
+
+containers: 
+toleration:
+ -	key: ""
+	operator: ""
+	value: ""
+	effect: "NoSchedule"
+	
